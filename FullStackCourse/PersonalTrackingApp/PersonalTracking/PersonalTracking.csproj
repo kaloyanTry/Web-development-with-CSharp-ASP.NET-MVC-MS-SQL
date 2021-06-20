@@ -46,27 +46,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartment.Designer.cs">
+      <DependentUpon>FormDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDepartmentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDepartmentList.Designer.cs">
+      <DependentUpon>FormDepartmentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployee.Designer.cs">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeList.Designer.cs">
+      <DependentUpon>FormEmployeeList.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPossition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPossition.Designer.cs">
+      <DependentUpon>FormPossition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPossitionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPossitionList.Designer.cs">
+      <DependentUpon>FormPossitionList.cs</DependentUpon>
+    </Compile>
     <Compile Include="General.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormDepartment.resx">
+      <DependentUpon>FormDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDepartmentList.resx">
+      <DependentUpon>FormDepartmentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployee.resx">
+      <DependentUpon>FormEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeList.resx">
+      <DependentUpon>FormEmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPossition.resx">
+      <DependentUpon>FormPossition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPossitionList.resx">
+      <DependentUpon>FormPossitionList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +153,9 @@
       <Project>{7802888b-3770-4b0b-8a46-6b9095fd182e}</Project>
       <Name>DAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

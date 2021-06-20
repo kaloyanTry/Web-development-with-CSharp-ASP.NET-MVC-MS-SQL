@@ -108,7 +108,7 @@ namespace PersonalTracking
             this.Controls.Add(this.labelUserNo);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "0";
+            this.Text = "FormLogin";
             this.ResumeLayout(false);
             this.PerformLayout();
 
