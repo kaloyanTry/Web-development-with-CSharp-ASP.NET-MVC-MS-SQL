@@ -12,6 +12,7 @@ namespace PersonalTracking
 {
     public partial class FormDepartmentList : Form
     {
+    
         public FormDepartmentList()
         {
             InitializeComponent();
