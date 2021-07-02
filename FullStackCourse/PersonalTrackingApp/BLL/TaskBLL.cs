@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL.DAO;
 using DAL;
-using Task = DAL.Task; //adding for the mistake
+using Task = DAL.Task; //added for the mistake
 
 namespace BLL
 {
@@ -18,7 +18,7 @@ namespace BLL
             taskdto.Employees = EmployeeDAO.GetEmployees();
             taskdto.Departments = DepartmentDAO.GetDepartments();
             taskdto.Positions = PositionDAO.GetPositions();
-            taskdto.TaskStates = TaskDAO.GetTaskState();
+            taskdto.TaskStates = TaskDAO.GetTaskStates();
             taskdto.Tasks = TaskDAO.GetTasks();
             return taskdto;
         }
@@ -28,19 +28,19 @@ namespace BLL
             TaskDAO.AddTask(task);
         }
 
-        //public static void UpdateTask(TASK task)
-        //{
-        //    TaskDAO.UpdateTask(task);
-        //}
+        public static void UpdateTask(Task task)
+        {
+            TaskDAO.UpdateTask(task);
+        }
 
-        //public static void DeleteTask(int taskID)
-        //{
-        //    TaskDAO.DeleteTask(taskID);
-        //}
+        public static void DeleteTask(int taskID)
+        {
+            TaskDAO.DeleteTask(taskID);
+        }
 
-        //public static void ApproveTask(int taskID, bool isAdmin)
-        //{
-        //    TaskDAO.ApproveTask(taskID, isAdmin);
-        //}
+        public static void ApproveTask(int taskID, bool isAdmin)
+        {
+            TaskDAO.ApproveTask(taskID, isAdmin);
+        }
     }
 }
