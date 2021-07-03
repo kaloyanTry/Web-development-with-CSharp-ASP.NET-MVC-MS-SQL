@@ -12,7 +12,7 @@ namespace DAL.DTO
         public int UserNo { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public int TaskState { get; set; }
+   
         public DateTime? TaskStartDate { get; set; }
         public DateTime? TaskDeliveryDate { get; set; }
         public string TaskStateName { get; set; }
