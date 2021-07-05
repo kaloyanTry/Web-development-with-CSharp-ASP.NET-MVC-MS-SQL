@@ -33,7 +33,7 @@ namespace PersonalTracking
             this.txtUserNo = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.labelPass = new System.Windows.Forms.Label();
-            this.btnEnter = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@ namespace PersonalTracking
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.Location = new System.Drawing.Point(160, 89);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(174, 30);
             this.txtPass.TabIndex = 1;
             // 
@@ -74,22 +75,23 @@ namespace PersonalTracking
             this.labelPass.TabIndex = 0;
             this.labelPass.Text = "Password";
             // 
-            // btnEnter
+            // btnLogin
             // 
-            this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(203, 150);
-            this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(131, 45);
-            this.btnEnter.TabIndex = 2;
-            this.btnEnter.Text = "Enter";
-            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(198, 150);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(136, 45);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(42, 150);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(131, 45);
+            this.btnExit.Size = new System.Drawing.Size(140, 45);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -99,9 +101,9 @@ namespace PersonalTracking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 373);
+            this.ClientSize = new System.Drawing.Size(782, 553);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnEnter);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.labelPass);
             this.Controls.Add(this.txtUserNo);
@@ -120,7 +122,7 @@ namespace PersonalTracking
         private System.Windows.Forms.TextBox txtUserNo;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label labelPass;
-        private System.Windows.Forms.Button btnEnter;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;
     }
 }
