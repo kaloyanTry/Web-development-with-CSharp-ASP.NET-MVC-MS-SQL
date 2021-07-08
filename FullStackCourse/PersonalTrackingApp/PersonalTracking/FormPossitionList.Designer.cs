@@ -34,20 +34,21 @@ namespace PersonalTracking
             this.btnClose = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(682, 372);
+            this.dataGridView1.Size = new System.Drawing.Size(782, 372);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -55,17 +56,17 @@ namespace PersonalTracking
             this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.btnNew);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 370);
+            this.panel1.Location = new System.Drawing.Point(0, 470);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(682, 83);
+            this.panel1.Size = new System.Drawing.Size(782, 83);
             this.panel1.TabIndex = 1;
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(288, 8);
+            this.btnClose.Location = new System.Drawing.Point(406, 8);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(89, 35);
             this.btnClose.TabIndex = 7;
@@ -76,9 +77,9 @@ namespace PersonalTracking
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(193, 8);
+            this.btnDelete.Location = new System.Drawing.Point(287, 8);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(89, 35);
+            this.btnDelete.Size = new System.Drawing.Size(113, 35);
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -86,33 +87,36 @@ namespace PersonalTracking
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(98, 8);
+            this.btnUpdate.Location = new System.Drawing.Point(154, 8);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(89, 35);
+            this.btnUpdate.Size = new System.Drawing.Size(127, 35);
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnAdd
+            // btnNew
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(3, 8);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(89, 35);
-            this.btnAdd.TabIndex = 4;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.Location = new System.Drawing.Point(59, 8);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(89, 35);
+            this.btnNew.TabIndex = 4;
+            this.btnNew.Text = "New";
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // FormPossitionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 453);
+            this.ClientSize = new System.Drawing.Size(782, 553);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormPossitionList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Possition List";
+            this.Load += new System.EventHandler(this.FormPossitionList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -126,6 +130,6 @@ namespace PersonalTracking
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnNew;
     }
 }

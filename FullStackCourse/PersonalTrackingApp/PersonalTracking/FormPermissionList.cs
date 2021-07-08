@@ -31,5 +31,21 @@ namespace PersonalTracking
         {
             Close();
         }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            FormPermission frm = new FormPermission();
+            Hide();
+            frm.ShowDialog();
+            Visible = true;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            FormPermission frm = new FormPermission();
+            Hide();
+            frm.ShowDialog();
+            Visible = true;
+        }
     }
 }
