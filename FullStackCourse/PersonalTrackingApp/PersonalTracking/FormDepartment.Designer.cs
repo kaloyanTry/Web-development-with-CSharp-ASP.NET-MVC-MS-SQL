@@ -48,7 +48,7 @@ namespace PersonalTracking
             // txtDepartment
             // 
             this.txtDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDepartment.Location = new System.Drawing.Point(141, 36);
+            this.txtDepartment.Location = new System.Drawing.Point(162, 38);
             this.txtDepartment.Name = "txtDepartment";
             this.txtDepartment.Size = new System.Drawing.Size(230, 30);
             this.txtDepartment.TabIndex = 0;
@@ -62,11 +62,12 @@ namespace PersonalTracking
             this.btnSave.TabIndex = 1;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(141, 86);
+            this.btnClose.Location = new System.Drawing.Point(162, 86);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(118, 35);
             this.btnClose.TabIndex = 2;
@@ -86,6 +87,7 @@ namespace PersonalTracking
             this.Name = "FormDepartment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Department";
+            this.Load += new System.EventHandler(this.FormDepartment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
