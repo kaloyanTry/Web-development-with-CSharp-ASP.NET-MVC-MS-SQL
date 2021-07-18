@@ -89,7 +89,6 @@ namespace Encapsulation
             this.Text = "FormEmployeeDetails";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
