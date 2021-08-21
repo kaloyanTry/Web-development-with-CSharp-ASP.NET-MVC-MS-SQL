@@ -7,6 +7,7 @@ namespace Encapsulation
     class Employee
     {
         protected int EmployeeID { get; set; }
+        
 
         public string EmployeeName { get; set; }
 
